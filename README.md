@@ -1,2 +1,2 @@
-# bitcoin-in-december-
-How much would you have if you got bitcoin in december
+# Lol if you didnt buy Bitcoin in December 2020 
+# have fun staying poor lol
