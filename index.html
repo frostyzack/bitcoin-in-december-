@@ -8,18 +8,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
         <style>
             body {
-                background-color:whitesmoke;
+                background-color:#f4f4f4;
             }
             ::-webkit-scrollbar {
                 display: none;
             }
             h1 {
                 text-align: center;
-                color: rgb(77, 77, 78);
+                color: #1c1c1c;
                 font-size: 100px;
                 font-family: 'Noto Sans JP', sans-serif;
-                border-bottom-width: 5px;
-                border-bottom-style: solid;
+                border-bottom: 5px solid;
                 padding-top: 25px;
                 padding-bottom: 25px;
                 margin-left: 150px;
@@ -27,7 +26,7 @@
             }
             h2 {
                 text-align: left;
-                color: rgb(77, 77, 78);
+                color: #1c1c1c;
                 font-size: 40px;
                 font-family: 'Noto Sans JP', sans-serif;
                 padding-left: 75px;
@@ -35,17 +34,30 @@
             }
             footer {
                 text-align: left;
-                color: rgb(77, 77, 78);
+                color: #1c1c1c;
                 font-size: 10px;
                 font-family: 'Noto Sans JP', sans-serif;
                 padding-left: 75px;
             }
+            .live {
+                background:#ff0;
+            }
+            .blink {
+                animation: blinker 1s step-end infinite;
+                -webkit-animation: blinker 1s step-end infinite;
+                -moz-animation: blinker 1s step-end infinite;
+            }
+            @keyframes blinker {
+                50% {
+                opacity: 0;
+            }
+        }
         </style>
     </head>
     <body>
-        <h1>Bitcoin is currently at $<span id="btc-price"></span></h1>
-        <h2>If you had purchased $1000 worth of it on 1st December 2020 you would have $<span id="btc-amount"></span> right now.</h2>
-        <h2>Otherwise, have fun staying poor lmfao idiot. <br> Tendy train go byebye no free money for you.</h2>
+        <h1>Bitcoin is currently at <span class="live">$<span id="btc-price"></span><span class="blink">_</span></span></h1>
+        <h2>If you had purchased <span class="live">$1000</span> worth of it on 1st December 2020 you would have <span class="live">$<span id="btc-amount"></span></span> right now.</h2>
+        <h2>Otherwise, <span class="live">have fun staying poor lmfao</span> idiot. <br> Tendy train go byebye no free money for you.</h2>
 
     </body>
     <footer>Remember to go follow my <a href="https://twitter.com/drfrostt_">Twitter</a></footer>
